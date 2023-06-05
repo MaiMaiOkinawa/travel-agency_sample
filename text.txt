@@ -1,0 +1,39 @@
+===HTML===
+
+<a href="tel:1234567890">+123-456-7890</a>
+<a href="tel:1112223333">+111-222-3333</a>
+
+===CSS===
+transform: scale(0); /* Undisplace menu */
+transform-origin: top right;  /* menu appears from top right */
+transition: 0.2s linear;
+
+ background-attachment: fixed;
+
+   /* fix bg pic size  */
+  min-height: calc(100vh - 10rem);
+
+backdrop-filter: blur(0.4rem);/* This blurs bg-color */
+
+.about .grid .box img {
+  height: 20rem;
+  transition: 0.2s linear; <-- Set together
+}
+.about .grid .box:hover img {
+  transform: scale(1.1); <-- Set together
+}
+
+background-blend-mode: multiply;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+flex: 1 1 40rem;
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+
+text-transform: none;
+
+Removing align-items: flex-start make the box size same as others
+align-items: flex-start;
+
+===JS===
+window.onscroll
